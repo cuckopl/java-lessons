@@ -1,3 +1,5 @@
-/spring-java-test-lessons.iml
 /.idea/
 /BuildingRESTfulWebService/target/
+/UploadingFiles/uploadin-files.iml
+/BuildingRESTfulWebService/spring-java-test-lessons.iml
+*.iml
