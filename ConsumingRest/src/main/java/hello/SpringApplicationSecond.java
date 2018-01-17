@@ -30,7 +30,6 @@ public class SpringApplicationSecond {
         return args -> {
             Quote quote = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", Quote.class);
             loger.info(quote.toString());
-
         };
     }
 
