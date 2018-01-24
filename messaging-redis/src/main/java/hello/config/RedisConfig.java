@@ -17,9 +17,11 @@ public class RedisConfig {
 
 
     @Bean
-    public JedisConnectionFactory redisConnectionFactory(JedisConnectionFactory factory) {
+    public JedisConnectionFactory redisConnectionFactory() {
+        JedisConnectionFactory factory = new JedisConnectionFactory();
         factory.setHostName("localhost");
-        factory.setPort(7000);
+        factory.setPort(7001);
+        factory.setConvertPipelineAndTxResults(true);
         return factory;
     }
 
